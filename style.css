@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Oswald:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Oswald:wght@300&family=Playfair+Display:ital@1&display=swap');
 :root {
     --primary-color:rgb(255, 92, 92);
     --primary-varient:#d20c0c;
@@ -46,7 +46,7 @@ section{
 }
 
 h1{
-    font-family: Satisfy, sans-serif;
+    font-family: Playfair Display, serif;
     font-size: 100px;
     margin-bottom: 0;
 }
