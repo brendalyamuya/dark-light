@@ -217,12 +217,11 @@ p{
     height: 34px;
     position: relative;
     width: 60px;
-}
+} 
 
 .theme-switch input{
     display: none;
 }
-
 .slider ::before{
     background: #fff;
     bottom: 4px;
