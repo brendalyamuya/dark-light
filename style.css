@@ -13,7 +13,7 @@
 [data-theme="dark"]{
     --primary-color:rgb(150, 65, 255);
     --primary-variant:#6c63ff;
-    --secondary-color:#03dac5;
+    --secondary-color:#06fce4;
     --onn-primary:rgb(0, 0, 0);
     --on-background:rgba(255, 255, 255, 0.9);
     --on-background-alt:rgba(255, 255, 255, 0.7);
@@ -66,12 +66,12 @@ nav{
     letter-spacing: 3px;
     padding: 25px;
     width: 100vw;
-    background: rgb(255, 255, 255 / 50%);
+    /* background: rgb(255, 255, 255 / 50%); */
 }
 
 a{
     margin-right: 25px;
-    color: black;
+    color: var(--secondary-color);
     text-decoration: none;
     border-bottom: 3px solid transparent;
     font-weight: bold;
@@ -80,7 +80,7 @@ a{
 a:hover,
 a:focus{
     color: var(--primary-varient);
-    /* border-bottom: 2px solid var(--primary-varient); */
+    border-bottom: 2px solid var(--primary-varient);
 }
 
 /* Home Section */
@@ -197,7 +197,8 @@ p{
     z-index: 100;
     position: fixed;
     right: 25px;
-    top: 30px;
+    top: 3px;
+
 }
 
 .theme-switch-wrapper span{
@@ -209,7 +210,7 @@ p{
     position: relative;
     top: -4px;
     right: 5px;
-    color: var(--on-background);
+    color: var(--secondary-color);
 }
 
 .theme-switch{
@@ -222,6 +223,7 @@ p{
 .theme-switch input{
     display: none;
 }
+
 .slider ::before{
     background: #fff;
     bottom: 4px;
@@ -252,4 +254,38 @@ input:checked + .slider::before{
 .fas{
     font-size: 30px;
     margin-right: 5px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #2196F3;
+}
+
+.toggle-checkbox:checked + .toggle-label:before {
+    transform: translateX(26px);
 }
