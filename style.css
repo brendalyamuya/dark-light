@@ -80,7 +80,7 @@ a{
 a:hover,
 a:focus{
     color: var(--primary-varient);
-    border-bottom: 2px solid var(--primary-varient);
+    /* border-bottom: 2px solid var(--primary-varient); */
 }
 
 /* Home Section */
